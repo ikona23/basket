@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="150134561">
+    <data-source source="LOCAL" name="Rails baskets: development" uuid="a75c441e-2e04-4960-b8a3-39dbf99b3b23">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:baskets_development</jdbc-url>
+      <user-name>Core</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails baskets: test" uuid="db460f74-7a44-4489-9947-145561a4d7b1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:baskets_test</jdbc-url>
+      <user-name>Core</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails baskets: production" uuid="0a19ff00-b07a-4059-a337-a24840f8afcc">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:baskets_production</jdbc-url>
+      <user-name>Core</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
