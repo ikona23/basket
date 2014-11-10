@@ -1,28 +1,27 @@
 <style>
   .row {
       margin-top: 50px;
+      margin-bottom: 50px;
   }
 </style>
-  <div class="row row-centered">
-<div id="product_list" >
-  <h1>Výpis tovaru</h1>
 
+
+  <div class="row text-center">
+    <div id="product_list" >
+  <h1 class="text-center">Výpis tovaru</h1>
   <table>
     <% @products.each do |product| %>
         <tr class="<%= cycle('list_line_odd', 'list_line_even') %>" >
-
           <td>
             <%= image_tag(product.image_url, :class => 'list_image') %>
           </td>
-
           <td class="list_description" >
             <dl>
               <dt><%= product.title %></dt>
               <dd><%= truncate(strip_tags(product.description),
-                               :length => 80) %></dd>
+                                         :length => 40) %></dd>
             </dl>
           </td>
-
           <td class="list_actions" >
             <%= link_to 'Zobrazit', product %><br/>
             <%= link_to 'Upravit', edit_product_path(product) %><br/>
@@ -33,7 +32,7 @@
         </tr>
     <% end %>
   </table>
-</div>
+     </div>
 
 <br />
 

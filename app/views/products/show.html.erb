@@ -1,5 +1,10 @@
-<%- model_class = Product -%>
+<style>
+  .row {
+      margin-bottom: 100px;
+  }
+</style>
 <div class="row row-centered">
+<%- model_class = Product -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
@@ -27,4 +32,3 @@
               :class => 'btn btn-danger' %>
 </div>
 </div>
-<br/>

@@ -1,0 +1,35 @@
+<style>
+  .katalog {
+      background: papayawhip;
+      padding-left:20px;
+      padding-righ:20px;
+  }
+  .katalog .p{
+      width: 300px;
+  }
+  .box {
+      width:300px;
+  }
+</style>
+
+    <div class="katalog">
+  <% if notice %>
+      <p id="notice" ><%= notice %></p>
+  <% end %>
+    <div class="box">
+        <h2>Zoznam produktov</h2>
+  <% @products.each do |product| %>
+      <div class="entry" >
+        <%= image_tag(product.image_url) %>
+        <h3><%= product.title %></h3>
+        <%= sanitize(product.description) %>
+        <div class="price_line" >
+      <span class="price">
+        <%= number_to_currency(product.price, :locale => :cs) %>
+      </span>
+          <%= button_to 'Pridat do košíku', line_items_path(:product_id => product) %>
+        </div>
+      </div>
+  <% end %>
+    </div>
+</div>
